@@ -35,7 +35,7 @@ class SelfAttentionHead(torch.nn.Module):
         
         
     def reset_cache(self):
-        self.last_index = self.last_index = -1
+        self.last_index = -1
         self.k_cache = torch.zeros(0, device=self.key.weight.device)
         self.v_cache = torch.zeros(0, device=self.value.weight.device)
         torch.cuda.empty_cache()
