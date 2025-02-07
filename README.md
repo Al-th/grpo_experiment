@@ -11,7 +11,7 @@ Shao, Z. et al. (2024) ‘DeepSeekMath: Pushing the Limits of Mathematical Reaso
 This project consists of a Jupyter Notebook `transformer_grpo.ipynb` that demonstrates the following steps:
 
 1. **Data Preparation:** Loading text data from `input.txt` and tokenizing it using a simple `NaiveTokenizer`.
-2. **Transformer Model:** Building a decoder-only Transformer model (`DecoderTrans`) from scratch using PyTorch.
+2. **Transformer Model:** Building a decoder-only Transformer model (`DecoderTrans`) from scratch using PyTorch (inspired from https://www.youtube.com/watch?v=kCc8FmEb1nY)
 3. **Baseline Training:** Training the Transformer model using standard cross-entropy loss on the input text data.
 4. **Reward Definition:** Defining reward functions to encourage specific text properties (e.g., `reward_shouting` to reward uppercase letters).
 5. **GRPO Optimization:** Implementing Group Relative Policy Optimization (GRPO) to fine-tune the pre-trained Transformer model using the defined reward function.
@@ -22,7 +22,7 @@ This project consists of a Jupyter Notebook `transformer_grpo.ipynb` that demons
 * **`transformer_grpo.ipynb`**: Jupyter Notebook containing the complete implementation of the Transformer model, training, GRPO optimization, and evaluation. 
 * **`input.txt`**:  The input text file used for training the language model. You should replace this with your desired dataset.
 * **`tokenizer.py`**: Python file containing the `NaiveTokenizer` class.
-* **`transformer.py`**: Python file containing the `DecoderTrans` class, implementing the Transformer model.
+* **`transformer.py`**: Python file containing the `DecoderTrans` class, implementing the Transformer model (inspired from https://www.youtube.com/watch?v=kCc8FmEb1nY)
 * **`README.md`**: This file, providing an overview of the project.
 
 ## Setup and Installation
@@ -82,3 +82,4 @@ By running the notebook, you can observe that the GRPO-optimized Transformer ten
 ## Acknowledgments
 
 * This project is inspired by research in Transformer models and Reinforcement Learning for Language Generation, particularly the DeepseekMath paper mentioned in the notebook comments (Shao, Z. et al. (2024) ‘DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models’, pp. 1–30. Available at: http://arxiv.org/abs/2402.03300.)
+* The transformer is inspired from https://www.youtube.com/watch?v=kCc8FmEb1nY
