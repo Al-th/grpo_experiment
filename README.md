@@ -1,5 +1,5 @@
 
-# GRPO-Transformer Text Generation
+# GRPO RL optimization of a Decoder-Only Transformer LLM
 
 This repository contains a PyTorch implementation of a decoder-only Transformer model, optimized using Group Relative Policy Optimization (GRPO) for text generation.
 The project aims to explore reward-based fine-tuning of language models to encourage specific text characteristics, in this case, "shouting" (using uppercase letters).
